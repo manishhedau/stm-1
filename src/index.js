@@ -4,18 +4,9 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from "react-redux";
-import { getAllStudents } from "./store/studentsSlice";
+import createStore from './store/configureStore'
 
-
-import configureStore from './store/configureStore'
-
-const store = configureStore();
-
-// store.dispatch(getAllStudents([
-//   {
-//     name: "manish"
-//   }
-// ]));
+const store = createStore();
 
 ReactDOM.render(
   <React.StrictMode>

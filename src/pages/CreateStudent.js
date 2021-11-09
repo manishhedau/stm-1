@@ -9,7 +9,6 @@ function CreateStudent() {
         DOB: '',
         profileImage: '',
     });
-    const [error, setError] = useState("");
     const [progressPercent, setProgressPercent] = useState(0);
 
     const handleFirstNameChange = (e) => {
