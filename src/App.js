@@ -18,7 +18,7 @@ function App() {
           <StudentForm />
         </Route>
 
-        <Route>
+        <Route path="*">
           <PageNotFound />
         </Route>
       </Switch>
